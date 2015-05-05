@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBlog", "GBlog\GBlog.csproj", "{6EF82E34-190F-4F7A-8D96-79FF948DEE8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBlog.Tests", "GBlog.Tests\GBlog.Tests.csproj", "{ECD690AD-34A0-4E30-87FE-61A189B2391E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EF82E34-190F-4F7A-8D96-79FF948DEE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF82E34-190F-4F7A-8D96-79FF948DEE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF82E34-190F-4F7A-8D96-79FF948DEE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF82E34-190F-4F7A-8D96-79FF948DEE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD690AD-34A0-4E30-87FE-61A189B2391E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD690AD-34A0-4E30-87FE-61A189B2391E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD690AD-34A0-4E30-87FE-61A189B2391E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD690AD-34A0-4E30-87FE-61A189B2391E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
