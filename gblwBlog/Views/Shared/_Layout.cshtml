@@ -5,41 +5,101 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
-    @Styles.Render("~/Content/css")
+
+    <script src="~/Scripts/html5.js"></script>
+    <link href="~/Content/style.css" rel="stylesheet" />
+    @*@Styles.Render("~/Content/css")*@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("应用程序名称", "Index", "Home", null, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("关于", "About", "Home")</li>
-                    <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+
+    <div id="wrap">
+        <header id="mainheader">
+            <h1>CSS <span>Heaven</span></h1>
+        </header>
+        <nav id="topnav">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Archives</a></li>
+
+            </ul>
+
+        </nav>
+        <div id="maincontent">
+            <section id="leftcontent" class="normalpage">
+
+
+                @RenderBody();
+
+
+
+                </section>
+
+            <!-- 右侧菜单栏  -->
+            <section id="sidebar">
+                <h2 title="Categories">Testimonials</h2>
+                <div class="sb-c">
+                    <p class="testimonial">
+
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna risus, scelerisque vel tempus at, auctor et mauris. Ut risus lorem, tempor ac sollicitudin euismod, ultrices at eros. Vivamus at erat non mauris molestie gravida malesuada non erat.
+                        <span>John Doe, John Doe, Inc.</span>
+
+                    </p>
+                </div>
+                <h2 title="Categories">Categories</h2>
+                <div class="sb-c">
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Site News</a></li>
+                        <li><a href="#">CSS Templates</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Photoshop</a></li>
+                        <li><a href="#">Apple / Mac</a></li>
+                        <li><a href="#">Ubuntu / Linux</a></li>
+                    </ul>
+                </div>
+
+            </section>
+                <div class="clear"></div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
-        </footer>
-    </div>
+    <div id="bottom">
+        <div id="btmwrap">
+            <section id="briefbio">
+                <h2>Who ?</h2>
+                <p>I am Roshan, a UI / Web designer with combined experience of 7 + years in Web Design and Graphic Design. I love designing websites. Even though I studied commerce and accounting in the college, I prefer to do I love the most - Playing with colors and creativity.</p>
+           
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
+
+            <h2>Latest Project</h2>
+            <div class="portfoliopre">
+                <div class="pf-thumb">
+                    <img src="images/portfoliothumb.jpg" width="245" height="125" alt="portfolio" />
+                </div>
+                <div class="pf-txt">
+                    <h3>CSSHeaven.org</h3>
+                    <p>CSS heaven a pet project of mine. This website was designed to provide free and opensource  css templates</p>
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+
+            </section>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        <p>2010 &copy; Your Website| All Rights Reserved| Free<a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a></p>
+
+    </footer>
 </body>
 </html>
